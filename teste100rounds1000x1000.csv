@@ -1,0 +1,25 @@
+28/07/2018 18:51:59
+Results for 100 rounds
+Rank,Robot Name,    Total Score    ,Survival,Surv Bonus,Bullet Dmg,Bullet Bonus,Ram Dmg * 2,Ram Bonus, 1sts , 2nds , 3rds 
+1st,sample.SpinBot,116371 (10%),77350,6200,29726,2046,974,75,32,20,8
+2nd,sample.Tracker,96774 (8%),63550,4000,25079,3221,859,65,20,11,8
+3rd,sample.TrackFire,75465 (6%),50000,0,23020,2445,0,0,0,1,11
+4th,sample.Crazy,69763 (6%),59400,600,8599,108,1040,15,3,4,12
+5th,sampleex.Alien,68082 (6%),58200,1600,7852,168,262,0,9,4,10
+6th,sample.Fire,66881 (6%),54250,0,12012,545,74,0,1,8,7
+7th,sample.PaintingRobot,66044 (6%),56800,1000,7852,185,208,0,6,7,7
+8th,sample.MyFirstJuniorRobot,63368 (5%),51800,800,9940,376,452,0,6,7,4
+9th,sample.MyFirstRobot,62441 (5%),53250,1400,7332,206,253,0,7,4,8
+10th,sampleex.AlienComposition,62172 (5%),53600,1200,7003,110,250,9,9,7,4
+11th,sample.Walls,60303 (5%),44200,400,14675,692,323,12,2,3,5
+12th,sample.VelociRobot,58187 (5%),42450,200,10103,189,5164,82,1,7,2
+13th,sampleex.MasterAndSlave,56189 (5%),49450,200,6164,129,244,3,3,4,5
+14th,sampleex.ProxyOfGreyEminence,52339 (4%),45500,800,5730,89,215,5,7,3,2
+15th,sample.RamFire,46340 (4%),27800,0,12378,423,4189,1550,0,1,0
+16th,sample.Target,39559 (3%),39450,0,0,0,109,0,0,0,0
+17th,sample.SittingDuck,34850 (3%),34850,0,0,0,0,0,0,0,1
+18th,sample.Corners,32677 (3%),25650,0,6645,374,8,0,0,0,3
+19th,sample.Interactive_v2,31400 (3%),31400,0,0,0,0,0,0,2,1
+20th,sample.Interactive,30350 (3%),30150,200,0,0,0,0,1,0,2
+21st,samplesentry.BorderGuard,0 (0%),0,0,25914,3522,1610,239,0,0,0
+$
