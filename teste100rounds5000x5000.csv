@@ -1,0 +1,25 @@
+28/07/2018 18:39:51
+Results for 100 rounds
+Rank,Robot Name,    Total Score    ,Survival,Surv Bonus,Bullet Dmg,Bullet Bonus,Ram Dmg * 2,Ram Bonus, 1sts , 2nds , 3rds 
+1st,sample.Crazy,99411 (9%),85500,4800,8354,617,139,0,24,28,25
+2nd,sample.Tracker,77510 (7%),52100,2600,19345,3212,253,0,13,4,6
+3rd,sample.SpinBot,74236 (7%),54400,200,17769,1634,233,0,1,1,5
+4th,sample.MyFirstJuniorRobot,68201 (6%),54250,800,11976,1084,91,0,4,4,2
+5th,sample.VelociRobot,68043 (6%),56300,0,10237,877,629,0,0,2,6
+6th,sampleex.Alien,63548 (6%),53900,1800,7212,594,41,0,9,6,6
+7th,sample.Corners,63234 (6%),53700,4400,4880,249,5,0,22,8,5
+8th,sample.PaintingRobot,60971 (5%),53100,1000,6451,386,34,0,5,3,7
+9th,sampleex.AlienComposition,60370 (5%),52700,600,6499,511,60,0,3,2,3
+10th,sample.MyFirstRobot,59566 (5%),51600,1400,6163,374,29,0,7,4,6
+11th,sample.RamFire,56693 (5%),35600,400,13839,389,4336,2130,2,4,3
+12th,sample.TrackFire,56102 (5%),38500,800,14852,1950,0,0,4,4,3
+13th,sample.Walls,55166 (5%),48900,200,5761,205,88,13,1,1,2
+14th,sample.Fire,52802 (5%),44300,200,7745,550,7,0,1,4,2
+15th,sampleex.MasterAndSlave,46051 (4%),42750,200,2980,86,35,0,1,2,2
+16th,sampleex.ProxyOfGreyEminence,44645 (4%),41350,0,3137,107,52,0,0,3,4
+17th,sample.Target,40967 (4%),40750,200,0,0,17,0,1,6,5
+18th,sample.SittingDuck,31100 (3%),30700,400,0,0,0,0,2,5,6
+19th,sample.Interactive,30750 (3%),30750,0,0,0,0,0,0,2,6
+20th,sample.Interactive_v2,29750 (3%),29750,0,0,0,0,0,0,8,2
+21st,samplesentry.BorderGuard,0 (0%),0,0,13229,2396,486,125,0,0,0
+$
