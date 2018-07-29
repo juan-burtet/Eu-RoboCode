@@ -29,7 +29,7 @@ public class Burtetanque extends AdvancedRobot
 	 */
 	public void run() {
 		i = 0;
-		mode = 0; // Inicializa com o modo
+		mode = 1; // Inicializa com o modo
 
 		// Modo Tracker
 		trackName = null; // Initialize to not tracking anyone
@@ -185,12 +185,12 @@ public class Burtetanque extends AdvancedRobot
 
 	// onScannedRobotCrazy no modo Crazy
 	public void onScannedRobotCrazy(ScannedRobotEvent e) {
-		fire(1);
+		fire(3);
 	}
 
 	// onScannedRobotTracker no modo Tracker
 	public void onScannedRobotTracker(ScannedRobotEvent e) {
-
+		setMaxVelocity(1000);
 		// If we have a target, and this isn't it, return immediately
 		// so we can get more ScannedRobotEvents.
 		if (trackName != null && !e.getName().equals(trackName)) {
@@ -211,14 +211,14 @@ public class Burtetanque extends AdvancedRobot
 			turnGunRight(gunTurnAmt); // Try changing these to setTurnGunRight,
 			turnRight(e.getBearing()); // and see how much Tracker improves...
 			// (you'll have to make Tracker an AdvancedRobot)
-			ahead(e.getDistance() - 140);
+			ahead(e.getDistance());
 			return;
 		}
 
 		// Our target is close.
 		gunTurnAmt = normalRelativeAngleDegrees(e.getBearing() + (getHeading() - getRadarHeading()));
 		turnGunRight(gunTurnAmt);
-		fire(3);
+		fire(300);
 
 		// Our target is too close!  Back up.
 		if (e.getDistance() < 100) {
@@ -238,8 +238,8 @@ public class Burtetanque extends AdvancedRobot
 	 */
 	public void onHitByBullet(HitByBulletEvent e) {
 			i++;
-			
-			if(i > 10){
+
+			if(i > 3){
 				i = 0;
 				mode++;
 				if(mode > 2)

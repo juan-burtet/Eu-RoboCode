@@ -12,7 +12,6 @@ import robocode.HitRobotEvent;
 import robocode.Robot;
 import robocode.ScannedRobotEvent;
 import robocode.WinEvent;
-import static robocode.util.Utils.normalRelativeAngleDegrees;
 
 import java.awt.*;
 
@@ -125,4 +124,10 @@ public class HunterTank extends Robot {
 		fire(200);
 		back(50);
 	}
+	
+	public static double normalRelativeAngleDegrees(double angle) {
+		return (angle %= 360) >= 0 ? (angle < 180) ? angle : angle - 360 : (angle >= -180) ? angle : angle + 360;
+	}
+
+
 }
