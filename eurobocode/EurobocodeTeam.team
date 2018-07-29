@@ -1,0 +1,7 @@
+#Robocode robot team
+#Sun Jul 29 02:24:01 BRT 2018
+team.members=eurobocode.EurobocodeBurtet*,eurobocode.EurobocodeCineastank*,eurobocode.EurobocodeGuardian*,eurobocode.EurobocodeRandom*,eurobocode.EurobocodeGuardian*
+team.author.name=
+robocode.version=1.9.3.2
+team.description=Nosso segundo time.
+team.version=2.0

@@ -1,7 +1,7 @@
 package eurobocode;
 import robocode.*;
 
-public class Cineasthank extends AdvancedRobot
+public class EurobocodeCineastank extends AdvancedRobot
 {
 	int estrategia;
 	
@@ -36,7 +36,8 @@ public class Cineasthank extends AdvancedRobot
 	}
 
 	public void onScannedRobot(ScannedRobotEvent e) {
-		fire(3);
+		if(!(e.getName().contains("Eurobocode")))
+			fire(3);
 	}
 
 	public void onHitByBullet(HitByBulletEvent e) {

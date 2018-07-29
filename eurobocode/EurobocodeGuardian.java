@@ -23,10 +23,10 @@ import java.awt.*;
  * @author Mathew A. Nelson (original)
  * @author Flemming N. Larsen (contributor)
  */
-public class BattlefieldGuardianTank extends Robot {
+public class EurobocodeGuardian extends Robot {
 
 	boolean peek; // Don't turn if there's a robot there
-	double moveAmount; // How much to move
+	double moveAmount; // How much to move10
 
 	/**
 	 * run: Move around the walls
@@ -80,7 +80,8 @@ public class BattlefieldGuardianTank extends Robot {
 	 * onScannedRobot:  Fire!
 	 */
 	public void onScannedRobot(ScannedRobotEvent e) {
-		fire(200);
+		if(!(e.getName().contains("Eurobocode")))
+			fire(200);
 		// Note that scan is called automatically when the robot is moving.
 		// By calling it manually here, we make sure we generate another scan event if there's a robot on the next
 		// wall, so that we do not start moving up it until it's gone.

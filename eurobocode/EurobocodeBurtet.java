@@ -9,7 +9,7 @@ import java.awt.*;
 /**
  * Burtetanque - a robot by Juan Burtet
  */
-public class Burtetanque extends AdvancedRobot
+public class EurobocodeBurtet extends AdvancedRobot
 {
 	private int mode; // Qual estilo vai ser usado pelo tanque
 	private int i;
@@ -179,13 +179,15 @@ public class Burtetanque extends AdvancedRobot
 
 	// onScannedRobotSpinBot no modo SpinBot
 	public void onScannedRobotSpinBot(ScannedRobotEvent e) {
-		fire(3);
+		if(!(e.getName().contains("Eurobocode")))
+			fire(3);
 	}
 
 
 	// onScannedRobotCrazy no modo Crazy
 	public void onScannedRobotCrazy(ScannedRobotEvent e) {
-		fire(3);
+		if(!(e.getName().contains("Eurobocode")))
+			fire(3);
 	}
 
 	// onScannedRobotTracker no modo Tracker
@@ -218,7 +220,8 @@ public class Burtetanque extends AdvancedRobot
 		// Our target is close.
 		gunTurnAmt = normalRelativeAngleDegrees(e.getBearing() + (getHeading() - getRadarHeading()));
 		turnGunRight(gunTurnAmt);
-		fire(300);
+		if(!(e.getName().contains("Eurobocode")))
+			fire(300);
 
 		// Our target is too close!  Back up.
 		if (e.getDistance() < 100) {
@@ -297,7 +300,8 @@ public class Burtetanque extends AdvancedRobot
 		// An AdvancedRobot might use setBack(); execute();
 		gunTurnAmt = normalRelativeAngleDegrees(e.getBearing() + (getHeading() - getRadarHeading()));
 		turnGunRight(gunTurnAmt);
-		fire(3);
+		if(!(e.getName().contains("Eurobocode")))
+			fire(3);
 		back(50);
 	}
 
@@ -313,7 +317,8 @@ public class Burtetanque extends AdvancedRobot
 	// onHitRobotSpinBot no modo SpinBot
 	public void onHitRobotSpinBot(HitRobotEvent e) {
 		if (e.getBearing() > -10 && e.getBearing() < 10) {
-			fire(3);
+			if(!(e.getName().contains("Eurobocode")))
+				fire(3);
 		}
 		if (e.isMyFault()) {
 			turnRight(10);

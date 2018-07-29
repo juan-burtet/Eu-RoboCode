@@ -8,7 +8,7 @@ import java.util.Random;
 /**
  * RandomTank - a robot by (your name here)
  */
-public class RandomTank extends AdvancedRobot
+public class EurobocodeRandom extends AdvancedRobot
 {
 	/**
 	 * run: RandomTank's default behavior
@@ -57,7 +57,6 @@ public class RandomTank extends AdvancedRobot
 						execute();
 						break;
 				default:
-						fire(1);
 						randomizer = 0;
 						stop = false;
 						break;
@@ -69,7 +68,8 @@ public class RandomTank extends AdvancedRobot
 	 * onScannedRobot: What to do when you see another robot
 	 */
 	public void onScannedRobot(ScannedRobotEvent e) {
-		fire(100);
+		if(!(e.getName().contains("Eurobocode")))
+			fire(100);
 		stop = true;
 		randomizer = 3;
 	}
@@ -110,6 +110,7 @@ public class RandomTank extends AdvancedRobot
 	}
 	
 	public void onHitRobot(HitRobotEvent e) {
-		fire(1000);		
+		if(!(e.getName().contains("Eurobocode")))
+			fire(1000);		
 	}
 }
