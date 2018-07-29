@@ -38,6 +38,14 @@ public class EurobocodeGuardian extends Robot {
 		// Initialize peek to false
 		peek = false;
 
+		// Set colors
+		setBodyColor(new Color(0, 0, 0));
+		setGunColor(new Color(0, 0, 0));
+		setRadarColor(new Color(0, 0, 0));
+		setBulletColor(new Color(0, 0, 0));
+		setScanColor(new Color(0, 0, 0));
+
+
 		// turnLeft to face a wall.
 		// getHeading() % 90 means the remainder of
 		// getHeading() divided by 90.
@@ -69,7 +77,7 @@ public class EurobocodeGuardian extends Robot {
 	public void onHitRobot(HitRobotEvent e) {
 		// If he's in front of us, set back up a bit.
 		if (e.getBearing() > -90 && e.getBearing() < 90) {
-			back(50);	
+			back(50);
 		} // else he's in back of us, so set ahead a bit.
 		else {
 			ahead(100);
